@@ -1,14 +1,14 @@
 import streamlit as st
 from sklearn.preprocessing import*
 import pandas as pd 
-from deploy.WebApps.olist_cluster_object import Olist_cluster
+from olist_cluster_object import Olist_cluster
 from pydantic import BaseModel
 
 st.markdown('''
 ## Olist customer clustering prediction apps
 ''')
 
-#P5_Segmentez_ecommerce/4_deployment/WebApps/
+#P5_segmentez_ecommerce/deploy/WebApps/
 
 customers = pd.read_csv('P5_segmentez_ecommerce/deploy/WebApps/DRV_customer_clustering_all.csv')        
 st.sidebar.header("Select the customer")
